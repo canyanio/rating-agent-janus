@@ -1,0 +1,48 @@
+# Agent listen address (UDP)
+# Defauls to: ":9060" which will listen on all avalable interfaces.
+# Overwrite with environment variable: RATING_AGENT_JANUS_LISTEN
+
+# listen: :8080
+
+
+# Message bus URI
+# Defauls to: "amqp://user:password@localhost:5672//"
+# Overwrite with environment variable: RATING_AGENT_JANUS_MESSAGE_BUS_URI
+
+# message_bus_uri: amqp://user:password@localhost:5672//
+
+
+# State manager
+# Defauls to: "memory"
+# Possible values: "memory", "redis"
+# Overwrite with environment variable: RATING_AGENT_JANUS_STATE_MANAGER
+
+# state_manager: memory
+
+
+# Redis address
+# Defauls to: "localhost:6379"
+# Overwrite with environment variable: RATING_AGENT_JANUS_REDIS_ADDRESS
+
+# redis_address: localhost:6379
+
+
+# Redis password
+# Defauls to: "" which disables the password authentication
+# Overwrite with environment variable: RATING_AGENT_JANUS_REDIS_PASSWORD
+
+# redis_password: ""
+
+
+# Redis database number
+# Defauls to: 0
+# Overwrite with environment variable: RATING_AGENT_JANUS_REDIS_DB
+
+# redis_db: 0
+
+
+# Tenant
+# Defauls to: "default" which is the default for the community edition
+# Overwrite with environment variable: RATING_AGENT_JANUS_TENANT
+
+# tenant: default
