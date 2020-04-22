@@ -46,3 +46,24 @@
 # Overwrite with environment variable: RATING_AGENT_JANUS_TENANT
 
 # tenant: default
+
+
+# SIP Header Caller
+# Defauls to: "" which disables the SIP caller identification from headers
+# Overwrite with environment variable: RATING_AGENT_JANUS_SIP_HEADER_CALLER
+
+# sip_header_caller: ""
+
+
+# SIP Header Callee
+# Defauls to: "" which disables the SIP callee identification from headers
+# Overwrite with environment variable: RATING_AGENT_JANUS_SIP_HEADER_CALLEE
+
+# sip_header_callee: ""
+
+
+# SIP local domains
+# Defauls to: [] which disables the identification of accounts based on domain
+# Overwrite with environment variable: RATING_AGENT_JANUS_SIP_LOCAL_DOMAINS
+
+# sip_local_domains: []

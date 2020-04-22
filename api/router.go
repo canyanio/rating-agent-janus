@@ -2,6 +2,9 @@ package api
 
 import (
 	"github.com/gin-gonic/gin"
+
+	"github.com/canyanio/rating-agent-janus/client/rabbitmq"
+	"github.com/canyanio/rating-agent-janus/state"
 )
 
 // API URL used by the HTTP router
@@ -12,7 +15,7 @@ const (
 )
 
 // NewRouter returns the gin router
-func NewRouter() *gin.Engine {
+func NewRouter(state state.ManagerInterface, client rabbitmq.ClientInterface) *gin.Engine {
 	gin.SetMode(gin.ReleaseMode)
 	router := gin.New()
 	router.Use(gin.Logger())
@@ -21,7 +24,7 @@ func NewRouter() *gin.Engine {
 	status := NewStatusController()
 	router.GET(APIURLStatus, status.Status)
 
-	janus := NewJanusController()
+	janus := NewJanusController(state, client)
 	router.POST(APIURLJanusWebhook, janus.Webhook)
 
 	return router

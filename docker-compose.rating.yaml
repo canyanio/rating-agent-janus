@@ -11,8 +11,8 @@ services:
       - RATING_API_HOST=0.0.0.0
       - RATING_API_PORT=8000
       - RATING_API_MONGODB_URI=mongodb://mongodb:27017
-    # ports:
-    #   - "8000:8000"
+    ports:
+      - "8000:8000"
     depends_on:
       - mongodb
     restart: always

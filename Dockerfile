@@ -16,4 +16,4 @@ COPY ./config.yaml /etc/rating-agent-janus
 COPY --from=builder /go/src/github.com/canyanio/rating-agent-janus/rating-agent-janus /usr/bin
 ENTRYPOINT ["/usr/bin/rating-agent-janus", "--config", "/etc/rating-agent-janus/config.yaml"]
 
-EXPOSE 9060/udp
+EXPOSE 8000
