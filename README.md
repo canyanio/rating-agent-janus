@@ -1,4 +1,7 @@
-[![Build Status](https://gitlab.com/canyan/rating-agent-janus/badges/master/pipeline.svg)](https://gitlab.com/canyan/rating-agent-janus/pipelines) [![codecov](https://codecov.io/gh/canyanio/rating-agent-janus/branch/master/graph/badge.svg)](https://codecov.io/gh/canyanio/rating-agent-janus) [![Docker pulls](https://img.shields.io/docker/pulls/canyan/rating-agent-janus.svg?maxAge=3600)](https://hub.docker.com/repository/docker/canyan/rating-agent-janus)
+[![Build Status](https://gitlab.com/canyan/rating-agent-janus/badges/master/pipeline.svg)](https://gitlab.com/canyan/rating-agent-janus/pipelines)
+[![codecov](https://codecov.io/gh/canyanio/rating-agent-janus/branch/master/graph/badge.svg)](https://codecov.io/gh/canyanio/rating-agent-janus)
+[![Go Report Card](https://goreportcard.com/badge/github.com/canyanio/rating-agent-janus)](https://goreportcard.com/report/github.com/canyanio/rating-agent-janus)
+[![Docker pulls](https://img.shields.io/docker/pulls/canyan/rating-agent-janus.svg?maxAge=3600)](https://hub.docker.com/repository/docker/canyan/rating-agent-janus)
 
 # Canyan Rating: Janus agent
 
