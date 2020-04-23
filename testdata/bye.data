@@ -1,0 +1,11 @@
+BYE sip:192.168.192.3:5060;transport=UDP SIP/2.0
+Via: SIP/2.0/UDP 192.168.192.2:5060;branch=z9hG4bK-18-1-6
+Route: <sip:192.168.192.5;lr;did=a11.a121>
+From: sipp <sip:1000@192.168.192.2:5060>;tag=1
+To: sut <sip:39040123456@anotherdomain.com:5060>;tag=1
+Call-ID: 1-18@192.168.192.2
+CSeq: 2 BYE
+Contact: <sip:192.168.192.2:5060;transport=UDP>
+Max-Forwards: 30
+Content-Length: 0
+

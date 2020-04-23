@@ -10,9 +10,36 @@ Canyan aims to address these challenges with a cloud-native scalable solution, e
 
 Ease of use is addressed with comprehensive documentation, examples and high-quality software (see the test coverage badge).
 
-Canyan Rating is designed as a microservice architecture and comprises [several repositories](https://github.com/canyanio). Its components are stateless and easily deployable via containers on-premises or in the cloud. This repository contains the Canyan Rating API.
+Canyan Rating is designed as a microservice architecture and comprises [several repositories](https://github.com/canyanio). Its components are stateless and easily deployable via containers on-premises or in the cloud. This repository contains the Canyan Rating Janus Agent.
 
 ![Canyan logo](https://canyanio.github.io/rating-integration/canyan-logo.png)
+
+## Usage
+
+To use the Janus Agent to process events from Janus, enable events in Janus Gateway, modifying `janus.jcfg` as follows:
+
+```
+events: {
+	broadcast = true
+	stats_period = 5
+}
+```
+
+You can now configure the webhook in `janus.eventhandler.sampleevh.jcfg` as follows:
+
+```
+general: {
+	enabled = true
+	events = "all"
+	grouping = true
+	json = "compact"
+	backend = "http://rating-agent-janus:8080/api/v1/janus-gateway"
+	max_retransmissions = 3
+	retransmissions_backoff = 100
+}
+```
+
+Replace `rating-agent-janus:8080` with the end-point of your Janus Agent.
 
 ## Getting started
 
